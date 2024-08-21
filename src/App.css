@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loading,
+.empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__list {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__list-btn {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__email {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.card__btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card__btn:hover {
+  background-color: #3e8e41;
+}
+
+.card__btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card__btn.liked {
+  background-color: #ff69b4;
+}
+
+.card__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card__list-btn {
+  margin: 0 auto;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.card__list-btn:hover {
+  background-color: #3e8e41;
+}
+
+.card__list-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card__page {
+  padding: 40px;
+}
+
+.card__page-title {
+  margin-bottom: 10px;
+}
+
+.card__page-text {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.card__btns {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__page-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card__page-btn {
+  background-color: #3e8e41;
+}
+
