@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import CardList from './components/CardList';
 import CardPage from './pages/CardPage';
@@ -6,12 +6,12 @@ import CardPage from './pages/CardPage';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<CardList />} />
           <Route path='/card/:id' element={<CardPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
